@@ -1,0 +1,16 @@
+
+#include <TVout.h>
+TVout TV;
+
+void setup() {
+  TV.begin(PAL, 120, 96);  // Start TVout in PAL mode (change to NTSC if needed)
+  TV.select_font(font6x8);  // Select font size
+  TV.println("Arduino to TV!");  // Display text
+}
+
+void loop() {
+  // This could be where you display dynamic information
+  TV.clear_screen();  // Clear the screen
+  TV.print(10, 10, "Hello, TV!");  // Print message at coordinates (10, 10)
+  delay(1000);
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/quantum_amberA200</color>
+    <color name="colorPrimaryDark">#003c8f</color>
+    <color name="colorAccent">#5e92f3</color>
+    <color name="colorPrimary9">#39579B</color>
+    <color name="rippleEfectColor">#000</color>
+    <color name="btnSignIn">#4a86ff</color>
+    <color name="btnLogIn">#fff</color>
+    <color name="colorPrimary2">#2db044</color>
+    <color name="colorPrimaryDark2">#007f14</color>
+    <color name="colorAccent2">#0b761c</color>
+    <color name="colorFont">#4a4a4a</color>
+    <color name="colorFontyellow">@color/quantum_amberA200</color>
+</resources>
