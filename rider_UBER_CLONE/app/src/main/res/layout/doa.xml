@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DA0">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <!--Edittext for getting users phone number-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/btnSignIn"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:id="@+id/selectCardGroup9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+            <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:padding="10dp"
+                android:layout_gravity="center_vertical"
+                app:ccp_countryPreference="KE,TZ,UG"
+                app:ccp_defaultCode="254"
+                app:ccp_defaultNameCode="KE"
+                app:ccp_hidePhoneCode="false"
+                app:ccp_textColor="#1C2020"
+                app:layout_constraintHorizontal_bias="0.0"
+                tools:layout_editor_absoluteX="7dp"
+                tools:visibility="visible" />
+        <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/idEdtPhoneNumber"
+        android:hint="Phone"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:inputType="phone"
+        app:met_singleLineEllipsis="true"
+        app:met_baseColor="@color/colorPrimary"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@color/colorPrimary" />
+        </LinearLayout>
+    <!--Button for getting OTP-->
+    <Button
+        android:id="@+id/idBtnGetOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_sign_in_background"
+        android:text="Get OTP"
+        android:textColor="#fff"  />
+    <!--Edittext for getting otp from user-->
+        <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/idEdtOtp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:met_singleLineEllipsis="true"
+        app:met_baseColor="@color/colorPrimary"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@color/colorPrimary"
+        android:hint="Enter OTP"
+            android:autofillHints="smsOTPCode"
+        android:importantForAutofill="yes"
+         />
+
+    <!--button for verifying user OTP-->
+    <Button
+        android:id="@+id/idBtnVerify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_sign_in_background"
+        android:text="Verify OTP"
+        android:textColor="#fff" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
